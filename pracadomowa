@@ -1,0 +1,101 @@
+A = {5, 4, 3, 2, 1}
+B = {4, 5, 6, 7, 8}
+C = {5, 6, 9, 10}
+
+
+
+def zadanie1(a, b, c):
+    return a | b | c
+
+
+print(zadanie1(A, B, C))  # Wypisze sumę zbiorów zad
+
+
+
+def zadanie2(a, b):
+    return a & b
+
+
+print(zadanie2(A, B))  
+
+
+
+def zadanie3(k):
+    k.clear()
+    return K 
+
+
+C_copy = C.copy()  
+print(zadanie3(C_copy))
+
+
+
+def zadanie4(a, b):
+    return a.issubset(b)
+
+
+print(zadanie4(A, B))  
+
+
+def zadanie5(a):
+    D = set(range(1, 11))
+    return D - a
+
+
+print(zadanie5(A))  
+
+
+
+A = {1, 2, 3, 4, 5}
+B = {4, 5, 6, 7, 8}
+C = {5, 6, 9, 10}
+
+
+
+
+
+def zadanie6(a:set, b:set):
+    return a.symmetric_difference(b)
+
+
+print(zadanie6(A,B))
+   
+
+A = {1, 2, 3, 4, 5}
+B = {4, 5, 6, 7, 8}
+C = {5, 6, 9, 10}
+
+
+def zadanie7(a:set,b:set,c:set,n:int):
+    a.add(n)
+    b.add(n)
+    c.add(n)
+
+
+print(A)
+print(B)
+print(C)
+
+
+
+def zadanie8(b:set, a:set):
+    return b - a
+
+
+def zadanie9(a:set,b:set,c:set):
+    E = set()
+    for el in a:
+        if el not in E and el % 2 == 0:
+            E.add(el)
+    for el in b:
+        if el not in E and el % 2 == 0:
+            E.add(el)
+    for el in c:
+        if el not in E and el % 2 == 0:
+            E.add(el)
+    return E
+
+
+print(zadanie9(A,B,C))
+
+
